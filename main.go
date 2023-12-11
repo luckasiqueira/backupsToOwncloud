@@ -3,14 +3,12 @@ package main
 import (
 	"github.com/joho/godotenv"
 	"os"
-	"os/exec"
 	"s3backups/models"
 )
 
 var Data = &models.Model{}
 
 func main() {
-	exec.Command("pwd")
 	// Define some dates
 	models.Now(Data)
 	models.Past(Data)
